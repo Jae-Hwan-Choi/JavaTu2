@@ -1,0 +1,29 @@
+
+
+올리는 순서
+1. cd로 디렉토리 찾아가기
+2. /c/javasrc/jhstudy/jhjava/src 
+3. git status 로 새로운 데이터 확인
+4. git add *
+4. git commit -m '제목' 
+5. git push -f origin main  <-- -f는 강제로 전부 바꿈 / origin은 ?? 닉네임? 아이디? 분류? 디렉토리??
+push를 누르면 창이 뜨는 경우도 있고 아닌 경우도 있음
+	아래는 정상 push 후 나오는 내용
+	Enumerating objects: 8, done.
+	Counting objects: 100% (8/8), done.	
+	Delta compression using up to 12 threads
+	Compressing objects: 100% (5/5), done.
+	Writing objects: 100% (8/8), 1.03 KiB | 1.03 MiB/s, done.
+	Total 8 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+	To https://github.com/Jae-Hwan-Choi/JHJavaStudy.git
+	 + 81dd140...68e5418 main -> main (forced update)
+6. git status 로 남은 데이터 확인
+
+
+// 깃에서 pull 하는 방법
+
+1. git fetch 
+ - 업데이트 내용 확인
+2. git pull origin main
+
+
