@@ -132,30 +132,20 @@ public class _q0808 {
 		// 피보나치 수열 1
 		// 1부터 8까지 증가
 		
-//		int a = 1;
-//		int b = 0;
-//		int c = 0;
-//		for (int i=1;i<8; i++) {
-			
-//		}
-
-		
-		// 선생님 답임. 다시 검토해보기
-//		int fib = 1; // 파보나치 수 1 1 2 3 5 8 13
-//		int bfib = 0;
-//		for (int i = 1; i < 8; i++) { // 피보나치 수의 개수 i
-//			System.out.println(fib);
-//			int temp = fib;
-//			fib = bfib+fib;
-//			bfib=temp;
-//		}
+		int a = 1; // 파보나치 수 1 1 2 3 5 8 13
+		int b = 0;
+		for (int i = 1; i < 8; i++) { // 피보나치 수의 개수 i
+			System.out.println(a);
+			int temp = a;
+			a = b+a;
+			b=temp;
+		}
 
 		
 		// 문제10 987654321이라는 숫자가 있다. 변수 2개와 for문 한개로 모든 자릿수를 더한 합을 구하시오
 		// 합만 출력하면 됩니다. main 메서드 안의 라인수를 최소화 하여서 작성하세요.
 		// 9+8+7+6+5+4+3+2+1 = 합
 		
-			
 			
 	}
 
