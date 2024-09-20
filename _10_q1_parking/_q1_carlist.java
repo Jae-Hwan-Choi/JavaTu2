@@ -11,7 +11,6 @@ public class _q1_carlist {
 	// 연결될 메소드(기능)
 	// 배열(7개)
 	_q1_cardata[] cname = new _q1_cardata[7];
-//	_q1_cardata[] cnumber = new _q1_cardata[7]; // 두개가 이름이 같으면 안될껄?????????????
 	Scanner in = new Scanner(System.in);
 	
 	_q1_carlist(){
@@ -21,6 +20,7 @@ public class _q1_carlist {
 			System.out.println("2. 개별조회");
 			System.out.println("3. 전체보기");
 			System.out.println("4. 삭제");
+			System.out.println("5. 수정");
 			System.out.println("선택 >>");
 			int carNum = in.nextInt();
 			in.nextLine();
@@ -33,6 +33,8 @@ public class _q1_carlist {
 				allList();
 			}else if(carNum == 4) {
 				cardel(); 
+			}else if(carNum == 5) {
+				carMod(); 
 			}else {
 				break;
 			}
@@ -71,11 +73,33 @@ public class _q1_carlist {
 		}
 	}
 	
+	public void carMod() {
+		// 시나리오
+		// 번호로 수정할 자동차 객체를 찾는다.
+		// 번호는 수정이 불가능하다 삭제만 할 수 있고 소유자만 수정이 가능
+		
+		System.out.println("소유자를 수정할 차량의 번호를 입력하세요");
+		String a = in.nextLine();
+		for (int i = 0; i<cname.length;i++) {
+			if (cname[i].carnum.equals(a)) {
+				System.out.println("변경할 소유자를 입력하시오");
+				String newUser = in.nextLine();
+				cname[i].name=newUser;
+				break;
+			}
+		}
+		
+		
+	}
+	
 	public void allList() {  
 		System.out.println("차량 전체 보기");
 		for(int i=0; i<cname.length; i++) {
 			if(cname[i]!=null) {
 				cname[i].cardata();				
+			}else {
+				System.out.println("조회할 차량이 없습니다");
+				break;
 			}
 		}
 	}
@@ -84,13 +108,23 @@ public class _q1_carlist {
 		System.out.println("차량 삭제");
 		System.out.println("차량번호를 입력해주세요");
 		String a = in.nextLine();
-		for (int i = 0; i<cname.length;i++) {
-			if (cname[i].carnum.equals(a)) {
-				cname[i]=null;
-				System.out.println(a+"번 차량을 삭제하였습니다");
-				break;
+//		for (int i = 0; i<cname.length;i++) {
+//			if (cname[i].carnum.equals(a)) {
+//				cname[i]=null;
+//				System.out.println(a+"번 차량을 삭제하였습니다");
+//				break;
+//			}
+//		}
+		
+		for(int i=0; i < cname.length;i++) {
+			if(cname[i]!=null) {
+				if(cname[i].carnum.equals(a)) {
+					cname[i]=null;
+					System.out.println(a+"번 차량을 삭제하였습니다");
+					break;
+				}
 			}
-		}
+		}	
 				
 	}
 	

@@ -7,7 +7,7 @@ public class Cat_main {
 		System.out.println("Cat 세상");
 		Cat_m catMge=new Cat_m();
 		//순서
-		//자료형(Cat_m) 변수(catMge) = 새로운객체(new) 생성자이며 메소드(Cat_m())
+		//자료형(Cat_m) 변수명(catMge) = 새로운객체(new) 생성자이며 메소드(Cat_m())
 	}
 
 }
