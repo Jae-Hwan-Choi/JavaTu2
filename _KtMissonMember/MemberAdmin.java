@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MemberAdmin {
 	// 의존관계 설정, 중요한 것은 MemberOne 객체를 만든 것이 아니다.
-	// MenberOne 객체의 주소값을 저장 할 배열(길이5)를 생성산 것이다.
+	// MemberOne 객체의 주소값을 저장 할 배열(길이5)를 생성산 것이다.
 	// 배열도 객체입니다. mlist는 참조변수이도 MemberOne 객체의 주소를
 	// 저장한 배열의 주소를 저장하고 있다.
 	MemberOne[] mlist = new MemberOne[5];
