@@ -27,7 +27,8 @@ public class MyDogList {
 		
 		for(int i=0; i < 5; i++){
 			if(d[i]!=null) {
-				System.out.println(d[i].name);}
+				System.out.println(d[i].name);
+			}
 		}
 	}
 	
