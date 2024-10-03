@@ -6,7 +6,10 @@ import java.util.Scanner;
 
 public class StudentMge {
 	ArrayList<StudentOne> sList = new ArrayList<>();
-	private final int MAXMEBERCOUNT = 10; // 최대 인원수 체크용 변수
+	private final int MAXMEBERCOUNT = 10;
+	// 최대 인원수 체크용 변수 final이 있어 변수값을 변경하고 
+	// 접근타입 private로 해당 클래스 내에서만 접근가능함.
+	
 	public void menu() {
 		// 학생과 id를 입력할수 있다.
 		// id는 중복될수 없다(*)
