@@ -32,6 +32,7 @@ public class MainMenu {
 			}else if (selNum == 2) {
 				CourseMge.menu();
 			}else if (selNum == 3) {
+				System.out.println("프로그램을 종료합니다.");
 				break;
 			}
 		}

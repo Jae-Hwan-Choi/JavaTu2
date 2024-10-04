@@ -48,17 +48,9 @@ public class StudentMge {
 	private int IDcheck(String id) {  // 아이디 체크를 위한 메소드
 		for(int i=0; i < sList.size(); i++) {
 			if(sList.get(i).getSId().equals(id)) {
-				//sList  변수명  . 참조연산자
-				// get(i)  메서드 호출, 매개변수로 i 넘겼다. 리턴타입 객체주소
-				// . 참조해라. get(i)로 부터 받은 주소를 참조해라
-				// getSId()  메서드 호출.. 매개변수 없다. 리턴타입은 String
-				//.  참조해라. 
-				// equals(id) 메서드 호출, 매개변수 id를 넘긴거고. 리터타입은 
-				// true false equals는 문자열과 매겨변수의 값이 같으면 
 				return 1;
 			}
 		}
-
 		return 0;
 	}
 	
